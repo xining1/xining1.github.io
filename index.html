@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Xi Ning</title>
+  
+<style>
+  body { font-family: sans-serif; background-color: #ffffff; color: #003366; max-width: 900px; margin: auto; padding: 2em; line-height: 1.6; }
+  header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2em; border-bottom: 2px solid #003366; padding-bottom: 1em; }
+  nav a { margin-right: 20px; text-decoration: none; color: #003366; font-weight: bold; }
+  nav a:hover { text-decoration: underline; }
+  .active { text-decoration: underline; }
+  .lang-switch { font-size: 0.9em; }
+  .cn { display: none; }
+  .photo { float: left; margin-right: 20px; width: 140px; border-radius: 4px; }
+  .clear { clear: both; }
+  @media (max-width: 600px) {
+    header, .photo { flex-direction: column; text-align: center; margin: auto; float: none; }
+    nav a { display: block; margin: 5px 0; }
+  }
+</style>
+<script>
+  function toggleLang(lang) {
+    document.querySelectorAll('.en').forEach(e => e.style.display = lang === 'en' ? 'block' : 'none');
+    document.querySelectorAll('.cn').forEach(e => e.style.display = lang === 'cn' ? 'block' : 'none');
+  }
+</script>
+
+</head>
+<body>
+<header>
+  <strong>Home</strong>
+  
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="teaching.html">Teaching</a>
+  <span class="lang-switch">
+    <button onclick="toggleLang('en')">EN</button> | <button onclick="toggleLang('cn')">中</button>
+  </span>
+</nav>
+
+</header>
+
+<img src="assets/XN.jpg" alt="Xi Ning" class="photo">
+<div class="en">
+  <h1>Xi Ning</h1>
+  <p>Assistant Professor of Statistics, Colby College</p>
+  <p>My research interests include survival analysis, semiparametric models, and machine learning.</p>
+  <p><a href="assets/Xi_Ning_CV.pdf" target="_blank">Download CV</a></p>
+</div>
+<div class="cn">
+  <h1>宁曦</h1>
+  <p>科尔比学院统计学助理教授</p>
+  <p>研究方向包括生存分析、半参数模型和机器学习。</p>
+  <p><a href="assets/Xi_Ning_CV.pdf" target="_blank">下载简历</a></p>
+</div>
+<div class="clear"></div>
+
+</body>
+</html>
