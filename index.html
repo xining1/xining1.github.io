@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Xi Ning</title>
+  
+<style>
+  body { margin: 0; font-family: sans-serif; }
+  .container { display: flex; min-height: 100vh; }
+  .sidebar {
+    background-color: #003366;
+    color: white;
+    padding: 2em 1.5em;
+    width: 220px;
+    flex-shrink: 0;
+  }
+  .sidebar h2 { color: #ffffff; }
+  .sidebar a {
+    color: white; text-decoration: none; display: block;
+    margin: 0.8em 0;
+  }
+  .sidebar a:hover { text-decoration: underline; }
+
+  .main {
+    flex-grow: 1;
+    padding: 2em;
+    background-color: #ffffff;
+    color: #003366;
+  }
+  .search-bar {
+    margin-bottom: 1em;
+  }
+  .search-bar input {
+    padding: 8px; width: 100%; max-width: 300px; font-size: 1em;
+  }
+  img.photo { width: 150px; float: left; margin-right: 20px; }
+  .clear { clear: both; }
+  @media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .sidebar { width: 100%; }
+  }
+</style>
+<script>
+  function searchContent() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    document.querySelectorAll(".searchable").forEach(el => {
+      el.style.display = el.innerText.toLowerCase().includes(input) ? "block" : "none";
+    });
+  }
+</script>
+
+</head>
+<body>
+<div class="container">
+  
+<div class="sidebar">
+  <h2>Xi Ning</h2>
+  <a href="index.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="assets/Xi_Ning_CV.pdf" target="_blank">Download CV</a>
+</div>
+
+  <div class="main">
+    
+<img src="assets/XN.jpg" alt="Xi Ning" class="photo">
+<h1>About Me</h1>
+<p>I am an Assistant Professor of Statistics at Colby College. My research interests include survival analysis, semiparametric models, and machine learning.</p>
+<p>I aim to develop innovative statistical methodologies for biomedical data and explore the theoretical aspects of semiparametric inference.</p>
+
+<p><a href="research.html"><button style="padding:10px 16px; background:#003366; color:white; border:none; border-radius:4px;">Search Publications</button></a></p>
+
+<div class="clear"></div>
+
+  </div>
+</div>
+</body>
+</html>
