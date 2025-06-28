@@ -1,89 +1,74 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
   <title>Research - Xi Ning</title>
   
 <style>
-  body { margin: 0; font-family: sans-serif; }
-  .container { display: flex; min-height: 100vh; }
-  .sidebar {
+  body {
+    margin: 0; font-family: sans-serif; background: #fff; color: #003366;
+  }
+  header {
     background-color: #003366;
     color: white;
-    padding: 2em 1.5em;
-    width: 220px;
-    flex-shrink: 0;
+    padding: 1em;
+    text-align: center;
   }
-  .sidebar h2 { color: #ffffff; }
-  .sidebar a {
-    color: white; text-decoration: none; display: block;
-    margin: 0.8em 0;
+  nav {
+    background-color: #0055aa;
+    padding: 0.5em;
+    text-align: center;
   }
-  .sidebar a:hover { text-decoration: underline; }
-
-  .main {
-    flex-grow: 1;
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
     padding: 2em;
-    background-color: #ffffff;
-    color: #003366;
+    max-width: 900px;
+    margin: auto;
   }
-  .search-bar {
-    margin-bottom: 1em;
+  img.photo {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    border-radius: 6px;
   }
-  .search-bar input {
-    padding: 8px; width: 100%; max-width: 300px; font-size: 1em;
+  ul li {
+    margin-bottom: 0.5em;
   }
-  img.photo { width: 150px; float: left; margin-right: 20px; }
   .clear { clear: both; }
-  @media (max-width: 768px) {
-    .container { flex-direction: column; }
-    .sidebar { width: 100%; }
-  }
 </style>
-<script>
-  function searchContent() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    document.querySelectorAll(".searchable").forEach(el => {
-      el.style.display = el.innerText.toLowerCase().includes(input) ? "block" : "none";
-    });
-  }
-</script>
 
 </head>
 <body>
-<div class="container">
-  
-<div class="sidebar">
-  <h2>Xi Ning</h2>
+
+<header>
+  <h1>Xi Ning</h1>
+</header>
+<nav>
   <a href="index.html">About</a>
   <a href="research.html">Research</a>
   <a href="teaching.html">Teaching</a>
-  <a href="assets/Xi_Ning_CV.pdf" target="_blank">Download CV</a>
-</div>
+  <a href="awards.html">Awards</a>
+  <a href="assets/Xi_Ning_CV.pdf" target="_blank">CV</a>
+</nav>
 
-  <div class="main">
-    
-<h1>Research & Publications</h1>
-<div class="search-bar">
-  <input type="text" id="searchInput" onkeyup="searchContent()" placeholder="Search publications...">
-</div>
-<div class="searchable">
-  <h3>Survival Analysis and Censored Data</h3>
+<main>
+  <h2>Research</h2>
+  <p>My research centers on statistical methodology development for biomedical data, especially in survival analysis and semiparametric inference.</p>
+  <h3>Publications</h3>
   <ul>
-    <li>Xi Ning, Author 2. <i>Title of Paper A</i>. Journal of Statistical Science, 2023.</li>
-    <li>Xi Ning, Author 3. <i>Another Study on Survival Models</i>. Biometrics, 2022.</li>
+    <li>Ning, X., Pan, Y., and Sun, Y. (2024). <i>Transformation Model-based Tests for the Proportional Hazards Assumption</i>. Biometrics.</li>
+    <li>Ning, X., Pan, Y., and Sun, Y. (2023). <i>Flexible Goodness-of-Fit Test in Transformation Models under Right Censoring</i>. Biostatistics.</li>
+    <li>Ning, X., et al. (2023). <i>Inference for Restricted Mean Lifetime under General Transformation Models</i>. Statistics in Medicine.</li>
   </ul>
-</div>
-<div class="searchable">
-  <h3>Semiparametric Models</h3>
-  <ul>
-    <li>Xi Ning. <i>Flexible Estimation in Transformation Models</i>. JASA, 2021.</li>
-  </ul>
-</div>
-
-  </div>
-</div>
+</main>
 </body>
 </html>

@@ -1,56 +1,72 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
   <title>Awards - Xi Ning</title>
-  <style>
-    body { margin: 0; font-family: sans-serif; }
-    .container { display: flex; min-height: 100vh; }
-    .sidebar {
-      background-color: #003366;
-      color: white;
-      padding: 2em 1.5em;
-      width: 220px;
-      flex-shrink: 0;
-    }
-    .sidebar h2 { color: #ffffff; }
-    .sidebar a {
-      color: white; text-decoration: none; display: block;
-      margin: 0.8em 0;
-    }
-    .sidebar a:hover { text-decoration: underline; }
-    .main {
-      flex-grow: 1;
-      padding: 2em;
-      background-color: #ffffff;
-      color: #003366;
-    }
-    @media (max-width: 768px) {
-      .container { flex-direction: column; }
-      .sidebar { width: 100%; }
-    }
-  </style>
+  
+<style>
+  body {
+    margin: 0; font-family: sans-serif; background: #fff; color: #003366;
+  }
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  nav {
+    background-color: #0055aa;
+    padding: 0.5em;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+  }
+  img.photo {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    border-radius: 6px;
+  }
+  ul li {
+    margin-bottom: 0.5em;
+  }
+  .clear { clear: both; }
+</style>
+
 </head>
 <body>
-<div class="container">
-  <div class="sidebar">
-    <h2>Xi Ning</h2>
-    <a href="index.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="awards.html">Awards</a>
-    <a href="assets/Xi_Ning_CV.pdf" target="_blank">Download CV</a>
-  </div>
-  <div class="main">
-    <h1>Awards</h1>
-    <ul>
-      <li>2024 – Young Investigator Award, ASA Biostatistics Section</li>
-      <li>2023 – Faculty Research Grant, Colby College</li>
-      <li>2022 – Best Paper Award, Eastern North American Region (ENAR)</li>
-    </ul>
-  </div>
-</div>
+
+<header>
+  <h1>Xi Ning</h1>
+</header>
+<nav>
+  <a href="index.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="awards.html">Awards</a>
+  <a href="assets/Xi_Ning_CV.pdf" target="_blank">CV</a>
+</nav>
+
+<main>
+  <h2>Awards & Honors</h2>
+  <ul>
+    <li>IMSI Junior Visiting Researcher Fellowship, 2024</li>
+    <li>UNC Charlotte LiDS Award for Outstanding Doctoral Student, 2022</li>
+    <li>Best Student Paper Award, ENAR (Biometric Society Eastern North American Region), 2022</li>
+  </ul>
+</main>
 </body>
 </html>
