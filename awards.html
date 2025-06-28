@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awards - Xi Ning</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .container { display: flex; min-height: 100vh; }
+    .sidebar {
+      background-color: #003366;
+      color: white;
+      padding: 2em 1.5em;
+      width: 220px;
+      flex-shrink: 0;
+    }
+    .sidebar h2 { color: #ffffff; }
+    .sidebar a {
+      color: white; text-decoration: none; display: block;
+      margin: 0.8em 0;
+    }
+    .sidebar a:hover { text-decoration: underline; }
+    .main {
+      flex-grow: 1;
+      padding: 2em;
+      background-color: #ffffff;
+      color: #003366;
+    }
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+      .sidebar { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <h2>Xi Ning</h2>
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="awards.html">Awards</a>
+    <a href="assets/Xi_Ning_CV.pdf" target="_blank">Download CV</a>
+  </div>
+  <div class="main">
+    <h1>Awards</h1>
+    <ul>
+      <li>2024 – Young Investigator Award, ASA Biostatistics Section</li>
+      <li>2023 – Faculty Research Grant, Colby College</li>
+      <li>2022 – Best Paper Award, Eastern North American Region (ENAR)</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
