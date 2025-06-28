@@ -30,9 +30,6 @@
       color: #000000;
       font-weight: bold;
     }
-    nav a.active {
-      color: #666666;
-    }
     nav a:hover {
       color: #0055aa;
     }
@@ -41,36 +38,41 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
+    h3 {
+      margin-top: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Teaching</h1>
-  </header>
-  <nav>
-    <a href="index.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html" class="active">Teaching</a>
-    <a href="awards.html">Awards</a>
-    <a href="Xi_Ning_CV.pdf">CV</a>
-  </nav>
-  <div class="content">
-    ---
-layout: page
-title: "Teaching"
-permalink: /teaching/
----
+<header>
+  <h1>Teaching</h1>
+</header>
+<nav>
+  <a href="index.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="awards.html">Awards</a>
+  <a href="Xi_Ning_CV.pdf">CV</a>
+</nav>
+<div class="content">
+  <h2>Courses Taught</h2>
 
-### Colby College
-- SC 321: Statistical Modeling (Fall 2024)
-- SC 398: Intro to Survival Analysis (Spring 2024)
-- SC 212: Intro to Statistics & Data Science (2023–2024)
+  <h3>Colby College</h3>
+  <ul>
+    <li>SC 321 “Statistical Modeling”, Fall 2024</li>
+    <li>SC 398 “Intro to Survival Analysis”, Spring 2024</li>
+    <li>SC 212 “Intro to Statistics & Data Science”, Fall 2023, Spring 2024, Fall 2024</li>
+  </ul>
 
-### UNC Charlotte
-- STAT 2223: Elements of Statistics II (with R)
-- STAT 3110: Applied Regression (with R)
-- STAT 2122: Intro to Probability & Statistics
-
-  </div>
+  <h3>UNC Charlotte</h3>
+  <ul>
+    <li>STAT 2223 “Elements of Statistics II (with R)”, Fall 2022</li>
+    <li>STAT 3110 “Applied Regression (with R)”, Fall 2021</li>
+    <li>STAT 2122 “Intro to Prob & Stats”, Fall 2020, Spring 2021, Summer 2021, Spring 2022, Spring 2023</li>
+  </ul>
+</div>
 </body>
 </html>
